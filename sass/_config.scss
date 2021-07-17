@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+$font-stack: "Roboto", sans-serif;
+$font-current-size: 1.2rem;
+$background: whitesmoke;
+$currentColor: black;
+
+:root {
+  --outside-color: #222831;
+  --inside-color: #eeeeee;
+  --logo-title-size: 1.4rem;
+  --bulietyn-size: 1rem;
+  --footer-wodomierz-sline-title-size: 0.8rem;
+  --nav-fline-title-size: 1.2rem;
+  --fline-small-size: 0.9rem;
+  --sline-bottom-title: 0.6rem;
+  --news-alarm-tel-size: 0.86rem;
+  --alarm-tel-title: 1.3rem;
+  --letter-spacing: normal;
+  --bg-color: whitesmoke;
+  --first-line-child-bg: green;
+  --second-line-child-bg: white;
+  --nav-hover-color: white;
+  transition: all ease-in 0.3s;
+}
+
+@mixin hover-text-color($text, $background) {
+  color: $text;
+  background-color: $background;
+  a {
+    color: $text;
+  }
+}
+@mixin flex-layout($justify, $align, $direct) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direct;
+}

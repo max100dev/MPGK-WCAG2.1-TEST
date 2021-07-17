@@ -1,0 +1,80 @@
+@import "./config";
+
+.navigation {
+  @include flex-layout(center, center, column);
+  width: 100%;
+  margin-top: 3%;
+}
+
+.upper-header {
+  @include flex-layout(space-between, flex-end, row);
+}
+
+.logo {
+  @include flex-layout(flex-start, flex-end, row);
+  width: 80%;
+  img {
+    padding: 1em;
+    background-color: whitesmoke;
+    border-radius: 15px;
+  }
+  h1 {
+    margin-left: 2%;
+    color: var(--outside-color);
+    font-size: var(--logo-title-size);
+  }
+}
+
+.bulietyn {
+  @include flex-layout(flex-end, center, row);
+  width: 20%;
+  img {
+    width: 20%;
+  }
+  h4 {
+    color: var(--outside-color);
+    font-size: var(--bulietyn-size);
+  }
+}
+
+.navbar {
+  width: 100%;
+  margin: 2% 0;
+
+  ul {
+    @include flex-layout(space-between, center, row);
+    list-style: none;
+    li a {
+      text-decoration: none;
+      transition: color ease-in 0.3s;
+      color: var(--outside-color);
+    }
+
+    li {
+      padding: 10px 25px;
+      font-size: var(--nav-fline-title-size);
+      transition: background-color ease-in 0.3s;
+    }
+
+    li:hover {
+      background-color: var(--first-line-child-bg);
+      a {
+        color: var(--nav-hover-color);
+      }
+    }
+
+    a:focus li {
+      background-color: var(--first-line-child-bg);
+      a {
+        color: var(--nav-hover-color);
+      }
+    }
+  }
+}
+
+.banner {
+  margin-bottom: 5%;
+  img {
+    width: 100%;
+  }
+}

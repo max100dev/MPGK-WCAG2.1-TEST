@@ -1,0 +1,28 @@
+@import "./config";
+@import "./utilities";
+@import "./wcag21";
+@import "./navigation";
+@import "./footer";
+@import "./main_page";
+@import "./responsive";
+.main-page {
+  @include flex-layout(center, center, column);
+  max-width: 60%;
+  height: 100%;
+  margin: auto;
+}
+body {
+  background-color: var(--bg-color);
+}
+html * {
+  transition: all ease-in 0.13s;
+}
+
+:focus {
+  outline: 5px solid rgb(255, 0, 0);
+  outline-offset: 2px;
+}
+
+body {
+  overflow-x: hidden;
+}

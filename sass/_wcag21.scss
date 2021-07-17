@@ -1,0 +1,75 @@
+@import "./config";
+
+.wcag21 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.9em 1em;
+  margin-top: 1em;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  min-width: 100%;
+}
+
+.wcag21 > * {
+  flex: 1 1 5%;
+  padding: 0 1%;
+  @include flex-layout(flex-start, center, row);
+}
+
+.wcag21 > * > *:nth-child(1) {
+  margin-right: 2em;
+}
+
+.wcag21 > * > *:nth-child(2) {
+  display: flex;
+  img {
+    width: 1.8em;
+  }
+}
+
+.wcag21 > * h3 {
+  font-weight: 400;
+  font-size: 0.98rem;
+}
+
+.font1,
+.font2,
+.font3,
+.contrast1,
+.contrast2,
+.contrast3,
+.space1,
+.space2 {
+  padding: 0 1em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contrast1,
+.contrast2 {
+  margin-right: 0.3em;
+}
+
+.contrast1 {
+  background-color: black;
+  img {
+    filter: invert(1);
+  }
+}
+.contrast2 {
+  background-color: rgb(255, 240, 37);
+}
+.contrast3 {
+  background-color: rgb(0, 240, 40);
+}
+
+.bigger-font > * h3 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.reset a:focus {
+  outline: none;
+}

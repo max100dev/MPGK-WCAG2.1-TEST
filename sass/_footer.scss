@@ -1,0 +1,26 @@
+.footer-info {
+  @include flex-layout(space-between, center, row);
+  width: 60%;
+  margin: 5% auto;
+  position: relative;
+  padding-bottom: 3%;
+  border-bottom: 1px solid var(--outside-color);
+  h4 {
+    font-weight: 400;
+    color: var(--outside-color);
+    font-size: var(--footer-wodomierz-sline-title-size);
+  }
+
+  .contact1 {
+    img {
+      width: 8em;
+      padding: 1em;
+      border-radius: 15px;
+      background-color: whitesmoke;
+    }
+  }
+
+  > * {
+    margin-right: 5%;
+  }
+}
